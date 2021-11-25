@@ -45,7 +45,7 @@
                     role="menu" aria-labelledby="notifications">
                     <section class="content" slimscroll="{height: '100%', size: '3px'}"
                         style="background-color: #f5f5f5;">
-                        <h4 class="uppercase-bold text-sm text-center" style="color: #47699e; margin-bottom:0;">ERP
+                        <!-- <h4 class="uppercase-bold text-sm text-center" style="color: #47699e; margin-bottom:0;">ERP
                             MODULES</h4>
                         <div class="row">
                             <div class="col-xs-4 col-sm-4 col-md-4" ng-repeat="y in header.modules">
@@ -66,7 +66,7 @@
                                     </div>
                                 </a>
                             </div>
-                        </div>
+                        </div> -->
                     </section>
                 </div>
             </div>
@@ -82,25 +82,27 @@
                 </button>
                 <div class="dropdown-menu with-arrow animated littleFadeInRight profile" uib-dropdown-menu role="menu"
                     aria-labelledby="profile">
-                    <div class="media">
+                    <div class="media" style="padding-bottom: 10px;">
                         <div class="media-left">
-                            <!-- <img class="media-object img-circle" src={{imagepath}} alt=""> -->
-                            <i class="fa fa-user media-object img-circle"></i>
+                            <img class="media-object img-circle" src={{header.imagepath}} alt="">
+                            <!-- <i class="fa fa-user media-object img-circle"></i> -->
                         </div>
                         <div class="media-body">
-                            <h4 class="text-sm uppercase-bold">{{header.details1.names.name_n_join_date_contact[0].nme}}
+                            <button class="btn btn-theme minotaur-btn" ng-click="header.logout()"
+                                    style="float: right; line-height: 20px;"><i class="fa fa-power-off"></i>
+                                    Logout</button>
+                            <!-- <h4 class="text-sm uppercase-bold">{{header.details1.names.name_n_join_date_contact[0].nme}}
                             </h4>
                             <a href="javascript:;">{{header.details1.names.name_n_join_date_contact[0].mail}}</a>
                             <ul class="list-unstyled">
                                 <li><a ui-sref="pages.profile_view"><i class="fa fa-user"></i> View Profile</a></li>
                                 <li><a ui-sref="pages.profile"><i class="fa fa-edit"></i> Edit Profile</a></li>
                                 <li><a ui-sref="pages.changePassword"><i class="fa fa-key"></i> Change Password</a></li>
-                            </ul>
+                            </ul> -->
                         </div>
                     </div>
-                    <div class="footer" style="padding: 5px">
+                    <!-- <div class="footer" style="padding: 5px">
                         <div class="row" style="padding: 0">
-                            <!-- ng-click="$event.stopPropagation()" -->
                             <div class="col-xs-6" style="">
                                 <form name="togg">
                                     <select name="course" class="form-control" chosen="{width:'100%'}"
@@ -118,7 +120,7 @@
                                     Logout</button>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </li>
