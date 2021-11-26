@@ -54,9 +54,10 @@
                                             <td>{{x.form_id__start_time}}</td>
                                             <td>{{x.form_id__end_time}} </td>
                                             <th> 
-                                                <button ng-click="dashboard.openForm(x.form_id)" class="btn btn-primary">
+                                                <button ng-if="x.form_status == 0" ng-click="dashboard.openForm(x.form_id)" class="btn btn-primary">
                                                   ATTEMPT
                                                 </button>
+                                                <span ng-if="x.form_status == 1" style="color: green; font-weight: bold;">ATTEMPTED</span>
                                             </th>
                                         </tr>
                                     </tbody>
