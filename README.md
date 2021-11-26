@@ -17,7 +17,7 @@ Node version must be 10.
 
 For convenience, we have a live API server running at https://microsoftback.herokuapp.com/ for the application to make requests against. 
 
-The source code for the backend server (available for Django) can be found in the [main RealWorld repo](https://github.com/samyak3009/backend/).
+The source code for the backend server (available for Django) can be found in the https://github.com/samyak3009/backend/.
 
 If you want to change the API URL to a local server, simply edit `src/app/components/services/BaseUrl.js` and change `api` to the local server's 
 
